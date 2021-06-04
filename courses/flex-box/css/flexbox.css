@@ -17,13 +17,13 @@
 .rodapePrincipal-patrocinadores-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 70%;
-  margin-right: 5%;
 }
 
 .rodapePrincipal-contatoForm {
-  width: 25%;
+  width: 30%;
+  padding-left: 2em;
 }
 
 .rodapePrincipal-contatoForm-fieldset {
@@ -41,7 +41,6 @@
 .conteudoPrincipal-cursos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .conteudoPrincipal-cursos-link {
@@ -49,9 +48,99 @@
   /* margin: 1%; */
 }
 
-/* .conteudoprincipal-cursos-link:nth-child(4n) {
+.conteudoPrincipal-cursos-link:nth-child(4n) {
   margin-right: 0;
 }
-.conteudoprincipal-cursos-link:nth-child(4n + 1) {
+
+.conteudoPrincipal-cursos-link:nth-child(4n + 1) {
   margin-left: 0;
-} */
+}
+
+.videoSobre .container {
+  display: flex;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+/*  mobile */
+@media (max-width: 768px) {
+  /* .conteudoPrincipal .container {
+    flex-direction: column;
+  } */
+  .cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }
+
+  .cabecalhoPrincipal-nav {
+    flex-direction: column;
+  }
+
+  .conteudoPrincipal-cursos {
+    flex-direction: column;
+  }
+
+  .conteudoPrincipal-cursos-link {
+    width: 100%;
+    margin: 0 0 1% 0;
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0; */
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+  }
+
+  .rodapePrincipal-patrocinadores-list-link {
+    text-align: center;
+  }
+
+  .rodapePrincipal-contatoForm fieldset {
+    margin-top: 1em;
+  }
+
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+    margin: 0;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+
+  .cabecalhoPrincipal-nav-link-app {
+    order: -1;
+  }
+
+  .videoSobre .container {
+    flex-direction: column;
+  }
+
+  .videoSobre-video {
+    margin: 0 auto;
+  }
+}
