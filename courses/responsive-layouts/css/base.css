@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --blue-light: #dfe3e5;
+  --red-dark: #b72e2e;
+  --gray-light: #f7f4f4;
+  --gray-middle: #d9d9d9;
+  --gray-dark: #4f4c4c;
+
+  --link-color: #0084ff;
+  --font-gray: #666;
+  --border-header-mobile: #103d4a;
+  --background-footer: #333;
+  --background-call-mobile: #00161c;
+
+  --plans-cart-start: #56ccf2;
+  --plans-cart-ultra: #b04cd9;
+  --plans-cart-mega: #e33b3b;
+
+  --montserrat: "Montserrat", sans-serif;
+}
+
+.container {
+  padding: 0 6%;
+}
+
+.btn {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  padding: 1rem 2rem;
+  border: 1px solid var(--white);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
+}
