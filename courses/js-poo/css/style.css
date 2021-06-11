@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background-color: #57b6e0;
+  color: #eee;
+}
+
+.account-form {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #57b6e0aa;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: none;
+  background-color: #e07757;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
+  text-align: left;
+  background-color: #ccc;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+small {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  font-size: 0.5rem;
+}
+.info p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+span + span {
+  padding-top: 0.25rem;
+}
